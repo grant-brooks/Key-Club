@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  Main-Menu-Controller.h
 //  Key Club
 //
 //  Created by Grant Goodman on 10/18/15.
@@ -8,14 +8,17 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface MM : UIViewController
 
 //-//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//-//
 
 
 /*                                                  Interface Builder UI Elements                                                  */
 
-@property (weak, nonatomic) IBOutlet UIButton *signUpButton;
+@property (weak, nonatomic) IBOutlet UIButton * eventButton;
+@property (weak, nonatomic) IBOutlet UIButton * calendarButton;
+
+@property (weak, nonatomic) IBOutlet UIView   * containerView;
 
 //-//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//-//
 
@@ -68,4 +71,3 @@
 //-//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//-//
 
 @end
-

@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  Sign-Up-Controller.h
 //  Key Club
 //
 //  Created by Grant Goodman on 10/18/15.
@@ -8,14 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface SU : UIViewController
+
 
 //-//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//-//
 
 
 /*                                                  Interface Builder UI Elements                                                  */
 
-@property (weak, nonatomic) IBOutlet UIButton *signUpButton;
+@property (weak, nonatomic) IBOutlet UIPickerView * gradeLevelPickerView;
+@property (weak, nonatomic) IBOutlet UIPickerView * schoolDistrictPickerView;
 
 //-//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//-//
 
@@ -46,6 +48,8 @@
 
 /*                                                              Arrays                                                             */
 
+@property (strong, nonatomic) NSArray * gradeLevelArray;
+@property (strong, nonatomic) NSArray * schoolDistrictArray;
 
 //-//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//-//
 
@@ -68,4 +72,3 @@
 //-//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//-//
 
 @end
-

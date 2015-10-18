@@ -25,6 +25,9 @@
 		68C2DD891BD428F9003604BF /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 68C2DD881BD428F9003604BF /* libsqlite3.tbd */; };
 		68C2DD8B1BD42911003604BF /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68C2DD8A1BD42911003604BF /* Parse.framework */; settings = {ASSET_TAGS = (); }; };
 		68C2DD8D1BD42916003604BF /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68C2DD8C1BD42916003604BF /* Bolts.framework */; settings = {ASSET_TAGS = (); }; };
+		68C2DD911BD42E20003604BF /* Sign-Up-Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 68C2DD901BD42E20003604BF /* Sign-Up-Controller.m */; settings = {ASSET_TAGS = (); }; };
+		68C2DD941BD4379E003604BF /* Main-Menu-Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 68C2DD931BD4379E003604BF /* Main-Menu-Controller.m */; settings = {ASSET_TAGS = (); }; };
+		68C2DD971BD439CC003604BF /* Embedded-Events-Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 68C2DD961BD439CC003604BF /* Embedded-Events-Controller.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +53,12 @@
 		68C2DD881BD428F9003604BF /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		68C2DD8A1BD42911003604BF /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		68C2DD8C1BD42916003604BF /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		68C2DD8F1BD42E20003604BF /* Sign-Up-Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Sign-Up-Controller.h"; sourceTree = "<group>"; };
+		68C2DD901BD42E20003604BF /* Sign-Up-Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Sign-Up-Controller.m"; sourceTree = "<group>"; };
+		68C2DD921BD4379E003604BF /* Main-Menu-Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Main-Menu-Controller.h"; sourceTree = "<group>"; };
+		68C2DD931BD4379E003604BF /* Main-Menu-Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Main-Menu-Controller.m"; sourceTree = "<group>"; };
+		68C2DD951BD439CC003604BF /* Embedded-Events-Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Embedded-Events-Controller.h"; sourceTree = "<group>"; };
+		68C2DD961BD439CC003604BF /* Embedded-Events-Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Embedded-Events-Controller.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,11 +115,16 @@
 		68C2DD5E1BD42393003604BF /* Key Club */ = {
 			isa = PBXGroup;
 			children = (
+				68C2DD981BD439D1003604BF /* Embedded Controllers */,
 				68C2DD621BD42393003604BF /* AppDelegate.h */,
 				68C2DD631BD42393003604BF /* AppDelegate.m */,
 				68C2DD651BD42393003604BF /* ViewController.h */,
 				68C2DD661BD42393003604BF /* ViewController.m */,
 				68C2DD681BD42393003604BF /* Main.storyboard */,
+				68C2DD8F1BD42E20003604BF /* Sign-Up-Controller.h */,
+				68C2DD901BD42E20003604BF /* Sign-Up-Controller.m */,
+				68C2DD921BD4379E003604BF /* Main-Menu-Controller.h */,
+				68C2DD931BD4379E003604BF /* Main-Menu-Controller.m */,
 				68C2DD6B1BD42393003604BF /* Assets.xcassets */,
 				68C2DD6D1BD42393003604BF /* LaunchScreen.storyboard */,
 				68C2DD701BD42393003604BF /* Info.plist */,
@@ -127,6 +141,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		68C2DD981BD439D1003604BF /* Embedded Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				68C2DD951BD439CC003604BF /* Embedded-Events-Controller.h */,
+				68C2DD961BD439CC003604BF /* Embedded-Events-Controller.m */,
+			);
+			name = "Embedded Controllers";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -137,6 +160,7 @@
 				68C2DD581BD42393003604BF /* Sources */,
 				68C2DD591BD42393003604BF /* Frameworks */,
 				68C2DD5A1BD42393003604BF /* Resources */,
+				68C2DD8E1BD42A4A003604BF /* Update Build Number */,
 			);
 			buildRules = (
 			);
@@ -192,14 +216,34 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		68C2DD8E1BD42A4A003604BF /* Update Build Number */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Update Build Number";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#!/bin/bash\nbuildNumber=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"$INFOPLIST_FILE\")\nbuildNumber=$(($buildNumber + 1))\nCFBundleVersionINCR=1.0.0\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" \"$INFOPLIST_FILE\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		68C2DD581BD42393003604BF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				68C2DD671BD42393003604BF /* ViewController.m in Sources */,
+				68C2DD941BD4379E003604BF /* Main-Menu-Controller.m in Sources */,
+				68C2DD971BD439CC003604BF /* Embedded-Events-Controller.m in Sources */,
 				68C2DD641BD42393003604BF /* AppDelegate.m in Sources */,
 				68C2DD611BD42393003604BF /* main.m in Sources */,
+				68C2DD911BD42E20003604BF /* Sign-Up-Controller.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
