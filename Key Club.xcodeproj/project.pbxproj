@@ -13,6 +13,18 @@
 		68C2DD6A1BD42393003604BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68C2DD681BD42393003604BF /* Main.storyboard */; };
 		68C2DD6C1BD42393003604BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68C2DD6B1BD42393003604BF /* Assets.xcassets */; };
 		68C2DD6F1BD42393003604BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68C2DD6D1BD42393003604BF /* LaunchScreen.storyboard */; };
+		68C2DD771BD427FB003604BF /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68C2DD761BD427FB003604BF /* AudioToolbox.framework */; };
+		68C2DD791BD42805003604BF /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68C2DD781BD42805003604BF /* CFNetwork.framework */; };
+		68C2DD7B1BD4280A003604BF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68C2DD7A1BD4280A003604BF /* CoreGraphics.framework */; };
+		68C2DD7D1BD4280F003604BF /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68C2DD7C1BD4280F003604BF /* CoreLocation.framework */; };
+		68C2DD7F1BD428D6003604BF /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68C2DD7E1BD428D6003604BF /* QuartzCore.framework */; };
+		68C2DD811BD428E0003604BF /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68C2DD801BD428E0003604BF /* Security.framework */; };
+		68C2DD831BD428E4003604BF /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68C2DD821BD428E4003604BF /* StoreKit.framework */; };
+		68C2DD851BD428EC003604BF /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68C2DD841BD428EC003604BF /* SystemConfiguration.framework */; };
+		68C2DD871BD428F3003604BF /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 68C2DD861BD428F3003604BF /* libz.tbd */; };
+		68C2DD891BD428F9003604BF /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 68C2DD881BD428F9003604BF /* libsqlite3.tbd */; };
+		68C2DD8B1BD42911003604BF /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68C2DD8A1BD42911003604BF /* Parse.framework */; settings = {ASSET_TAGS = (); }; };
+		68C2DD8D1BD42916003604BF /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68C2DD8C1BD42916003604BF /* Bolts.framework */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +38,18 @@
 		68C2DD6B1BD42393003604BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		68C2DD6E1BD42393003604BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		68C2DD701BD42393003604BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		68C2DD761BD427FB003604BF /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		68C2DD781BD42805003604BF /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		68C2DD7A1BD4280A003604BF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		68C2DD7C1BD4280F003604BF /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		68C2DD7E1BD428D6003604BF /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		68C2DD801BD428E0003604BF /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		68C2DD821BD428E4003604BF /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		68C2DD841BD428EC003604BF /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		68C2DD861BD428F3003604BF /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		68C2DD881BD428F9003604BF /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		68C2DD8A1BD42911003604BF /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		68C2DD8C1BD42916003604BF /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +57,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68C2DD891BD428F9003604BF /* libsqlite3.tbd in Frameworks */,
+				68C2DD871BD428F3003604BF /* libz.tbd in Frameworks */,
+				68C2DD851BD428EC003604BF /* SystemConfiguration.framework in Frameworks */,
+				68C2DD8D1BD42916003604BF /* Bolts.framework in Frameworks */,
+				68C2DD831BD428E4003604BF /* StoreKit.framework in Frameworks */,
+				68C2DD811BD428E0003604BF /* Security.framework in Frameworks */,
+				68C2DD7F1BD428D6003604BF /* QuartzCore.framework in Frameworks */,
+				68C2DD8B1BD42911003604BF /* Parse.framework in Frameworks */,
+				68C2DD7D1BD4280F003604BF /* CoreLocation.framework in Frameworks */,
+				68C2DD7B1BD4280A003604BF /* CoreGraphics.framework in Frameworks */,
+				68C2DD791BD42805003604BF /* CFNetwork.framework in Frameworks */,
+				68C2DD771BD427FB003604BF /* AudioToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +78,18 @@
 		68C2DD531BD42393003604BF = {
 			isa = PBXGroup;
 			children = (
+				68C2DD881BD428F9003604BF /* libsqlite3.tbd */,
+				68C2DD861BD428F3003604BF /* libz.tbd */,
+				68C2DD8C1BD42916003604BF /* Bolts.framework */,
+				68C2DD8A1BD42911003604BF /* Parse.framework */,
+				68C2DD841BD428EC003604BF /* SystemConfiguration.framework */,
+				68C2DD821BD428E4003604BF /* StoreKit.framework */,
+				68C2DD801BD428E0003604BF /* Security.framework */,
+				68C2DD7E1BD428D6003604BF /* QuartzCore.framework */,
+				68C2DD7C1BD4280F003604BF /* CoreLocation.framework */,
+				68C2DD7A1BD4280A003604BF /* CoreGraphics.framework */,
+				68C2DD781BD42805003604BF /* CFNetwork.framework */,
+				68C2DD761BD427FB003604BF /* AudioToolbox.framework */,
 				68C2DD5E1BD42393003604BF /* Key Club */,
 				68C2DD5D1BD42393003604BF /* Products */,
 			);
@@ -263,6 +311,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "Key Club/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.neotechnica.Key-Club";
@@ -274,6 +326,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "Key Club/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.neotechnica.Key-Club";
