@@ -8,7 +8,7 @@
 
 #import "Sign-Up-Controller.h"
 
-@interface SU () <UIPickerViewDataSource, UIPickerViewDelegate>
+@interface SU () <UIPickerViewDataSource, UIPickerViewDelegate, UITextFieldDelegate>
 
 @end
 
@@ -23,6 +23,15 @@
     
     self.schoolDistrictPickerView.tag = 100;
     self.gradeLevelPickerView.tag = 200;
+    
+    self.firstNameTextField.tag = 300;
+    self.lastNameTextField.tag = 400;
+    self.emailTextField.tag = 500;
+    self.phoneNumberTextField.tag = 600;
+    self.usernameTextField.tag = 700;
+    self.passwordTextField.tag = 800;
+    self.securityQuestionTextField.tag = 900;
+    self.securityQuestionAnswerTextField.tag = 1000;
 }
 
 - (void)didReceiveMemoryWarning
@@ -85,6 +94,44 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
+}
+
+- (void)checkIfBothNamesArePresent
+{
+    if (![self.firstNameString isEqual: @""])
+    {
+        if (![self.lastNameString isEqual: @""])
+        {
+            NSString *trimmedFirstNameString = [self.firstNameString substringToIndex:1];
+            
+            self.generatedUserNameString = [self.lastNameString.lowercaseString stringByAppendingString:trimmedFirstNameString.lowercaseString];
+            
+            if (self.generatedUserNameString != NULL)
+            {
+                self.usernameTextField.text = self.generatedUserNameString;
+            }
+        }
+    }
+}
+
+- (void)textFieldDidBeginEditing:(UITextField *)textField
+{
+    [self checkIfBothNamesArePresent];
+}
+
+- (void)textFieldDidEndEditing:(UITextField *)textField
+{
+    [self checkIfBothNamesArePresent];
+    
+    if (textField.tag == 300)
+    {
+        self.firstNameString = textField.text;
+    }
+    
+    if (textField.tag == 400)
+    {
+        self.lastNameString = textField.text;
+    }
 }
 
 @end

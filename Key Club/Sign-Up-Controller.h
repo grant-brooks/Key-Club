@@ -19,6 +19,19 @@
 @property (weak, nonatomic) IBOutlet UIPickerView * gradeLevelPickerView;
 @property (weak, nonatomic) IBOutlet UIPickerView * schoolDistrictPickerView;
 
+@property (weak, nonatomic) IBOutlet UITextField *firstNameTextField;
+@property (weak, nonatomic) IBOutlet UITextField *lastNameTextField;
+
+@property (weak, nonatomic) IBOutlet UITextField *emailTextField;
+
+@property (weak, nonatomic) IBOutlet UISegmentedControl *statusSegmentedControl;
+
+@property (weak, nonatomic) IBOutlet UITextField *phoneNumberTextField;
+@property (weak, nonatomic) IBOutlet UITextField *usernameTextField;
+@property (weak, nonatomic) IBOutlet UITextField *passwordTextField;
+@property (weak, nonatomic) IBOutlet UITextField *securityQuestionTextField;
+@property (weak, nonatomic) IBOutlet UITextField *securityQuestionAnswerTextField;
+
 //-//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//-//
 
 
@@ -42,6 +55,9 @@
 
 /*                                                                  Strings                                                        */
 
+@property (strong, nonatomic) NSString * firstNameString;
+@property (strong, nonatomic) NSString * lastNameString;
+@property (strong, nonatomic) NSString * generatedUserNameString;
 
 //-//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//-//
 
